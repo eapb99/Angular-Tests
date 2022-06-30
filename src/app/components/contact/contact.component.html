@@ -1,0 +1,17 @@
+<div class="form-container">
+    <h1>Contact</h1>
+    <form [formGroup]="contactForm" (ngSubmit)="onSaveForm()">
+        <input type="text" formControlName="name" placeholder="Name">
+        <div class="alert alert-danger">
+            <div class="container-error-message">
+                Name is required
+            </div>
+            <div class="container-error-message">
+                Name is required
+            </div>
+        </div>
+        <input type="email" formControlName="email" placeholder="Name">
+        <textarea formControlName="message" placeholder="Type" name="" id="" cols="30" rows="10"></textarea>
+        <button type="submit" class="btn-send">Send</button>
+    </form>
+</div>
